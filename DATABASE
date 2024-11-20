@@ -1,0 +1,40 @@
+- create database tindahan --
+
+ create table tindahan(
+ product_id int primary key auto_increment,
+ product_name varchar(50) not null,
+ product_price varchar(50) not null,
+product_stack varchar(50) not null,
+product_expiration bool not null
+ );
+ insert into tindahan(
+ product_name,
+ product_price,
+ product_stack,
+ product_expiration
+ )values
+ ("SUNSILK","12","12",0),
+ ("CREAMSILK","5","12",0),
+ ("STICK O","20","20",0),
+ ("CEGARETTE","55","50",0), ("MOVIE","10","12",0),
+ ("MANTIKA","35","12",0),
+ ("VINEGAR","15","12",0),
+ ("STING","20","12",0),
+ ("MOUNTAINDEW","20","12",0),-- ("NOVA","15","12",0),
+ ("COBRA","20","12",0),
+ ("MIGHTY","55","50",0),
+ ("BALLPEN","7","12",0),- ("PENCIL","8","12",0),
+ ("MILO","11","12",0),
+ ("ENERGEN","10","12",0),
+ ("GREATESTWHITE","11","12",0),
+ ("GRANULES","25","12",0),
+ ("SUGAR","23","12",0),
+ ("LADYSCHOICE","7","12",0),
+ ("EDEN","12","12",0),
+ ("LUCKYME","10","12",0),
+ ("C2","12","12",0),
+ ("EGG","12","12",0),
+("ONION","10","12",0);
+
+
+select*from tindahan
